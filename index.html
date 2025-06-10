@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- El idioma principal se establecerá dinámicamente con JavaScript -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El 'title' del Front Matter de Jekyll va aquí -->
+    <title>Moxor Games</title>
+    <!-- Usamos Tailwind CSS para el diseño. Esto reemplaza tu archivo CSS de Jekyll. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Puedes añadir estilos personalizados aquí, similar a tu main.scss en Jekyll */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Un fondo oscuro para temática de juegos */
+            color: #e2e8f0;
+        }
+        .btn {
+            @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors shadow-md;
+        }
+        .game {
+            @apply bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300;
+        }
+        .game-content {
+            @apply p-6;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- El contenido del 'body' de tu index.md va directamente aquí -->
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <!-- HEADER: Tu <header> de Jekyll -->
+        <header class="text-center mb-12">
+            <!-- Nota: Las rutas de las imágenes son ahora relativas. Asegúrate de que la carpeta 'assets' esté en el mismo directorio que este archivo HTML. -->
+            <img src="https://placehold.co/150x150/1a202c/e2e8f0?text=Logo" alt="Moxor Games Logo" class="mx-auto mb-4 w-32 h-32 rounded-full border-4 border-gray-700" />
+            <h1 id="title" class="text-5xl font-bold text-white">Moxor Games</h1>
+            <p id="subtitle" class="text-xl text-gray-400 mt-2">Juegos hechos con amor desde Argentina</p>
+            <a href="https://linktr.ee/moxorgames" class="btn mt-6 inline-block" id="follow-btn">Síguenos</a>
+        </header>
+
+        <!-- SECTION: Tu <section> de Jekyll -->
+        <section>
+            <h2 id="games-heading" class="text-3xl font-bold text-center mb-8 text-white">Juegos</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Game 1: Super Brairot Z -->
+                <div class="game">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Super+Brairot+Z" alt="Super Brairot Z Italian Power" class="w-full h-48 object-cover" />
+                    <div class="game-content">
+                        <h3 id="game1-title" class="text-2xl font-bold text-white">Super Brairot Z Italian Power</h3>
+                        <p id="game1-desc" class="text-gray-400 mt-2 mb-4">Disponible en Google Play y próximamente en App Store.</p>
+                        <!-- Estos enlaces apuntan a otros archivos HTML que deberías crear -->
+                        <div class="flex flex-wrap gap-4">
+                           <a href="/super-brairot-z.html" class="btn" id="playstore-btn">Google Play</a>
+                           <a href="/super-brairot-z.html" class="btn bg-gray-600 hover:bg-gray-700" id="appstore-btn">App Store (Próximamente)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 2: Logic Solving -->
+                <div class="game">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Logic+Solving" alt="Logic Solving" class="w-full h-48 object-cover" />
+                    <div class="game-content">
+                        <h3 id="game2-title" class="text-2xl font-bold text-white">Logic Solving</h3>
+                        <p id="game2-desc" class="text-gray-400 mt-2 mb-4">Un desafiante juego de lógica en desarrollo. ¡Muy pronto disponible!</p>
+                        <a href="/logic-solving.html" class="btn bg-teal-600 hover:bg-teal-700" id="comingsoon-btn">Muy Pronto</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER: Tu <footer> de Jekyll -->
+        <footer class="text-center mt-12 pt-8 border-t border-gray-800">
+            <p class="text-gray-500">&copy; 2025 Moxor Games</p>
+            <div class="mt-2">
+                <a href="https://linktr.ee/moxorgames" id="footer-link" class="text-blue-400 hover:underline">Linktree</a>
+                <span class="mx-2 text-gray-600">|</span>
+                <a href="/privacy-policy.html" id="privacy-link" class="text-blue-400 hover:underline">Política de Privacidad</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- SCRIPT: Tu script de internacionalización se copia directamente aquí. -->
+    <script>
+        const translations = {
+            en: {
+                title: "Moxor Games",
+                subtitle: "Games made with love from Argentina.",
+                follow: "Follow us",
+                games: "Games",
+                game1_title: "Super Brairot Z Italian Power",
+                game1_desc: "Pick your favorite Brainrot and take it to glory. Available on Google Play and coming soon to the App Store.",
+                game2_title: "Logic Solving",
+                game2_desc: "A challenging logic game in development. Coming soon!",
+                playstore: "Google Play",
+                appstore: "App Store (Coming Soon)",
+                comingsoon: "Coming Soon",
+                'footer-link': "Linktree",
+                'privacy-link': "Privacy Policy"
+            },
+            es: {
+                title: "Moxor Games",
+                subtitle: "Juegos hechos con amor desde Argentina",
+                follow: "Seguinos",
+                games: "Juegos",
+                game1_title: "Super Brairot Z Italian Power",
+                game1_desc: "Elegí tu Brainrot favorito y llevalo a la gloria. Disponible en Google Play y próximamente en App Store.",
+                game2_title: "Logic Solving",
+                game2_desc: "Un desafiante juego de lógica en desarrollo. ¡Muy pronto disponible!",
+                playstore: "Google Play",
+                appstore: "App Store (Próximamente)",
+                comingsoon: "Muy Pronto",
+                'footer-link': "Linktree",
+                'privacy-link': "Política de Privacidad"
+            }
+        };
+
+        function setLanguage() {
+            // Determina el idioma del navegador, por defecto 'en' si no es español.
+            const lang = navigator.language.startsWith("es") ? "es" : "en";
+            const t = translations[lang];
+            
+            // Actualiza el idioma de la etiqueta <html> para accesibilidad
+            document.documentElement.lang = lang;
+            
+            // Itera sobre las traducciones y actualiza el contenido del DOM
+            for (const key in t) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = t[key];
+                }
+            }
+        }
+        
+        // Ejecuta la función cuando el DOM esté completamente cargado.
+        document.addEventListener('DOMContentLoaded', setLanguage);
+    </script>
+
+</body>
+</html>
