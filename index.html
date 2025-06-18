@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- El idioma principal se establecerá dinámicamente con JavaScript -->
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,6 @@
     <title>Moxor Games</title>
     <!-- Usamos Tailwind CSS para el diseño. Esto reemplaza tu archivo CSS de Jekyll. -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Puedes añadir estilos personalizados aquí, similar a tu main.scss en Jekyll */
         body {
@@ -30,20 +27,14 @@
     </style>
 </head>
 <body class="antialiased">
-
-    <!-- El contenido del 'body' de tu index.md va directamente aquí -->
     <div class="container mx-auto p-4 md:p-8 max-w-4xl">
-
-        <!-- HEADER: Tu <header> de Jekyll -->
         <header class="text-center mb-12">
             <!-- Nota: Las rutas de las imágenes son ahora relativas. Asegúrate de que la carpeta 'assets' esté en el mismo directorio que este archivo HTML. -->
-            <img src="https://placehold.co/150x150/1a202c/e2e8f0?text=Logo" alt="Moxor Games Logo" class="mx-auto mb-4 w-32 h-32 rounded-full border-4 border-gray-700" />
+            <img src="images/logo.png" alt="Moxor Games Logo" class="mx-auto mb-4 w-32 h-32 rounded-full border-4 border-gray-700" />
             <h1 id="title" class="text-5xl font-bold text-white">Moxor Games</h1>
             <p id="subtitle" class="text-xl text-gray-400 mt-2">Juegos hechos con amor desde Argentina</p>
             <a href="https://linktr.ee/moxorgames" class="btn mt-6 inline-block" id="follow-btn">Síguenos</a>
         </header>
-
-        <!-- SECTION: Tu <section> de Jekyll -->
         <section>
             <h2 id="games-heading" class="text-3xl font-bold text-center mb-8 text-white">Juegos</h2>
 
@@ -51,7 +42,7 @@
 
                 <!-- Game 1: Super Brairot Z -->
                 <div class="game">
-                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Super+Brairot+Z" alt="Super Brairot Z Italian Power" class="w-full h-48 object-cover" />
+                    <img src="images/sbzip_banner.png" alt="Super Brairot Z Italian Power" class="w-full h-48 object-cover" />
                     <div class="game-content">
                         <h3 id="game1-title" class="text-2xl font-bold text-white">Super Brairot Z Italian Power</h3>
                         <p id="game1-desc" class="text-gray-400 mt-2 mb-4">Disponible en Google Play y próximamente en App Store.</p>
