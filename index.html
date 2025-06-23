@@ -33,7 +33,7 @@
             <img src="images/logo.png" alt="Moxor Games Logo" class="mx-auto mb-4 w-32 h-32 rounded-full border-4 border-gray-700" />
             <h1 id="title" class="text-5xl font-bold text-white">Moxor Games</h1>
             <p id="subtitle" class="text-xl text-gray-400 mt-2">Juegos hechos con amor desde Argentina</p>
-            <a href="https://linktr.ee/moxorgames" class="btn mt-6 inline-block" id="follow-btn">Síguenos</a>
+            <a href="https://linktr.ee/moxorgames" class="btn mt-6 inline-block" id="follow-btn">Seguinos</a>
         </header>
         <section>
             <h2 id="games-heading" class="text-3xl font-bold text-center mb-8 text-white">Juegos</h2>
@@ -41,15 +41,22 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                 <!-- Game 1: Super Brairot Z -->
-                <div class="game">
-                    <img src="images/sbzip_banner.png" alt="Super Brairot Z Italian Power" class="w-full h-48 object-cover" />
-                    <div class="game-content">
-                        <h3 id="game1-title" class="text-2xl font-bold text-white">Super Brairot Z Italian Power</h3>
-                        <p id="game1-desc" class="text-gray-400 mt-2 mb-4">Disponible en Google Play y próximamente en App Store.</p>
-                        <!-- Estos enlaces apuntan a otros archivos HTML que deberías crear -->
-                        <div class="flex flex-wrap gap-4">
-                           <a href="/super-brairot-z.html" class="btn" id="playstore-btn">Google Play</a>
-                           <a href="/super-brairot-z.html" class="btn bg-gray-600 hover:bg-gray-700" id="appstore-btn">App Store (Próximamente)</a>
+                <div class="game-card bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                    <a href="/super-brainrot-z-italian-power/index.html" class="block">
+                        <img src="images/sbzip_banner.png" alt="Super Brairot Z Italian Power" class="w-full h-48 object-cover object-center" />
+                    </a>
+                    <div class="p-6">
+                        <h3 class="text-3xl font-bold text-white mb-2">Super Brairot Z Italian Power</h3>
+                        <p class="text-gray-300 text-lg mb-6">¡Prepárate para la acción más divertida! Disponible en Google Play y próximamente en App Store.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://play.google.com/store/apps/details?id=tu.id.de.app" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-gray-900 text-white rounded-lg px-6 py-3 text-lg font-semibold hover:bg-gray-700 transition-colors duration-300 transform hover:scale-105">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-8 mr-3"/>
+                                Descargar en Google Play
+                            </a>
+                            <a href="#" class="flex items-center justify-center bg-gray-900 text-white rounded-lg px-6 py-3 text-lg font-semibold opacity-70 cursor-not-allowed">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store/black.svg" alt="App Store" class="h-8 mr-3"/>
+                                App Store (Próximamente)
+                            </a>
                         </div>
                     </div>
                 </div>
