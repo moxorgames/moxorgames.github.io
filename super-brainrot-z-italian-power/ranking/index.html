@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Brainrot Z Italian Power - Rankings</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .header-image {
+        width: 100%;
+        max-width: 1024px;
+        height: auto;
+        display: block;
+        margin: 0 auto 1rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .cta-link {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #0077cc;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .cta-link:hover {
+        color: #005fa3;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .ranking-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: white;
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .ranking-row:hover {
+        transform: scale(1.02);
+      }
+
+      .position {
+        font-weight: bold;
+        width: 2rem;
+        font-size: 1.2rem;
+      }
+
+      .thumbnail {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin: 0 1rem;
+      }
+
+      .name {
+        text-align: left;
+        font-size: 1.1rem;
+        flex-grow: 1;
+      }
+
+      .points {
+        color: #666;
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 600px) {
+        .ranking-row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .thumbnail {
+          margin: 0.5rem 0;
+        }
+        .name {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://cdn.glitch.global/6432e2a0-73e8-4493-9cc3-af2290e45136/feature_graphic_extended.png?v=1746734531125"
+        alt="Header Image"
+        class="header-image"
+      />
+
+      <a class="cta-link" href="https://linktr.ee/moxorgames" target="_blank"
+        >🥊 Fight for your favorite to put it on top</a
+      >
+
+      <h1>World Ranking</h1>
+      <div id="ranking-container">Loading...</div>
+    </div>
+
+    <script>
+      async function loadRanking() {
+        try {
+          const [rankingRes, fighterRes] = await Promise.all([
+            fetch("/get_ranking"),
+            fetch("/fighter_data.json"),
+          ]);
+
+          const rankingData = await rankingRes.json();
+          const fighterData = await fighterRes.json();
+
+          const container = document.getElementById("ranking-container");
+          container.innerHTML = "";
+
+          const sortedEntries = Object.entries(rankingData).sort(
+            (a, b) => b[1] - a[1]
+          );
+
+          sortedEntries.forEach(([id, score], index) => {
+            const fighter = fighterData[id];
+            if (!fighter) return; // Skip unknown fighters
+
+            const row = document.createElement("div");
+            row.className = "ranking-row";
+
+            row.innerHTML = `
+            <div class="position">#${index + 1}</div>
+            <img class="thumbnail" src="${fighter.image}" alt="${
+              fighter.name
+            }" />
+            <div class="name">
+              <strong>${fighter.name}</strong><br>
+              <span class="points">${score} Point${
+              score !== 1 ? "s" : ""
+            }</span>
+            </div>
+          `;
+
+            container.appendChild(row);
+          });
+        } catch (err) {
+          console.error("Error loading ranking:", err);
+          document.getElementById("ranking-container").innerText =
+            "Failed to load ranking.";
+        }
+      }
+
+      loadRanking();
+    </script>
+  </body>
+</html>
