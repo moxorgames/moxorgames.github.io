@@ -1,146 +1,219 @@
-<!DOCTYPE html>
-<!-- El idioma principal se establecerá dinámicamente con JavaScript -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- El 'title' del Front Matter de Jekyll va aquí -->
-    <title>Moxor Games</title>
-    <!-- Usamos Tailwind CSS para el diseño. Esto reemplaza tu archivo CSS de Jekyll. -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Puedes añadir estilos personalizados aquí, similar a tu main.scss en Jekyll */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #1a202c; /* Un fondo oscuro para temática de juegos */
-            color: #e2e8f0;
-        }
-        .btn {
-            @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors shadow-md;
-        }
-        .game {
-            @apply bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300;
-        }
-        .game-content {
-            @apply p-6;
-        }
-    </style>
-</head>
-<body class="antialiased">
-    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
-        <header class="text-center mb-12">
-            <!-- Nota: Las rutas de las imágenes son ahora relativas. Asegúrate de que la carpeta 'assets' esté en el mismo directorio que este archivo HTML. -->
-            <img src="images/logo.png" alt="Moxor Games Logo" class="mx-auto mb-4 w-32 h-32 rounded-full border-4 border-gray-700" />
-            <h1 id="title" class="text-5xl font-bold text-white">Moxor Games</h1>
-            <p id="subtitle" class="text-xl text-gray-400 mt-2">Juegos hechos con amor desde Argentina</p>
-            <a href="https://linktr.ee/moxorgames" class="btn mt-6 inline-block" id="follow-btn">Seguinos</a>
-        </header>
-        <section>
-            <h2 id="games-heading" class="text-3xl font-bold text-center mb-8 text-white">Juegos</h2>
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Moxor Games</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-                <!-- Game 1: Super Brairot Z -->
-                <div class="game-card bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
-                    <a href="/super-brainrot-z-italian-power/index.html" class="block">
-                        <img src="images/sbzip_banner.png" alt="Super Brairot Z Italian Power" class="w-full h-48 object-cover object-center" />
-                    </a>
-                    <div class="p-6">
-                        <h3 class="text-3xl font-bold text-white mb-2">Super Brairot Z Italian Power</h3>
-                        <p class="text-gray-300 text-lg mb-6">¡Prepárate para la acción más divertida! Disponible en Google Play y próximamente en App Store.</p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="https://play.google.com/store/apps/details?id=tu.id.de.app" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-gray-900 text-white rounded-lg px-6 py-3 text-lg font-semibold hover:bg-gray-700 transition-colors duration-300 transform hover:scale-105">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-8 mr-3"/>
-                                Descargar en Google Play
-                            </a>
-                            <a href="#" class="flex items-center justify-center bg-gray-900 text-white rounded-lg px-6 py-3 text-lg font-semibold opacity-70 cursor-not-allowed">
-                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store/black.svg" alt="App Store" class="h-8 mr-3"/>
-                                App Store (Próximamente)
-                            </a>
-                        </div>
-                    </div>
-                </div>
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Moxor Games</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></li>
+								<li><a href="#">Logic Solving</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<!-- <li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li> -->
+							</ul>
+						</nav>
+					</header>
 
-                <!-- Game 2: Logic Solving -->
-                <div class="game">
-                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Logic+Solving" alt="Logic Solving" class="w-full h-48 object-cover" />
-                    <div class="game-content">
-                        <h3 id="game2-title" class="text-2xl font-bold text-white">Logic Solving</h3>
-                        <p id="game2-desc" class="text-gray-400 mt-2 mb-4">Un desafiante juego de lógica en desarrollo. ¡Muy pronto disponible!</p>
-                        <a href="/logic-solving.html" class="btn bg-teal-600 hover:bg-teal-700" id="comingsoon-btn">Muy Pronto</a>
-                    </div>
-                </div>
+				<!-- Menu -->
+					<section id="menu">
 
-            </div>
-        </section>
+						<!-- Search -->
+							<!-- <section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section> -->
 
-        <!-- FOOTER: Tu <footer> de Jekyll -->
-        <footer class="text-center mt-12 pt-8 border-t border-gray-800">
-            <p class="text-gray-500">&copy; 2025 Moxor Games</p>
-            <div class="mt-2">
-                <a href="https://linktr.ee/moxorgames" id="footer-link" class="text-blue-400 hover:underline">Linktree</a>
-                <span class="mx-2 text-gray-600">|</span>
-                <a href="/privacy-policy.html" id="privacy-link" class="text-blue-400 hover:underline">Política de Privacidad</a>
-            </div>
-        </footer>
+						<!-- Links -->
+							<!-- <section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+								</ul>
+							</section> -->
 
-    </div>
+						<!-- Actions -->
+							<!-- <section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section> -->
 
-    <!-- SCRIPT: Tu script de internacionalización se copia directamente aquí. -->
-    <script>
-        const translations = {
-            en: {
-                title: "Moxor Games",
-                subtitle: "Games made with love from Argentina.",
-                follow: "Follow us",
-                games: "Games",
-                game1_title: "Super Brairot Z Italian Power",
-                game1_desc: "Pick your favorite Brainrot and take it to glory. Available on Google Play and coming soon to the App Store.",
-                game2_title: "Logic Solving",
-                game2_desc: "A challenging logic game in development. Coming soon!",
-                playstore: "Google Play",
-                appstore: "App Store (Coming Soon)",
-                comingsoon: "Coming Soon",
-                'footer-link': "Linktree",
-                'privacy-link': "Privacy Policy"
-            },
-            es: {
-                title: "Moxor Games",
-                subtitle: "Juegos hechos con amor desde Argentina",
-                follow: "Seguinos",
-                games: "Juegos",
-                game1_title: "Super Brairot Z Italian Power",
-                game1_desc: "Elegí tu Brainrot favorito y llevalo a la gloria. Disponible en Google Play y próximamente en App Store.",
-                game2_title: "Logic Solving",
-                game2_desc: "Un desafiante juego de lógica en desarrollo. ¡Muy pronto disponible!",
-                playstore: "Google Play",
-                appstore: "App Store (Próximamente)",
-                comingsoon: "Muy Pronto",
-                'footer-link': "Linktree",
-                'privacy-link': "Política de Privacidad"
-            }
-        };
+					</section>
 
-        function setLanguage() {
-            // Determina el idioma del navegador, por defecto 'en' si no es español.
-            const lang = navigator.language.startsWith("es") ? "es" : "en";
-            const t = translations[lang];
-            
-            // Actualiza el idioma de la etiqueta <html> para accesibilidad
-            document.documentElement.lang = lang;
-            
-            // Itera sobre las traducciones y actualiza el contenido del DOM
-            for (const key in t) {
-                const element = document.getElementById(key);
-                if (element) {
-                    element.textContent = t[key];
-                }
-            }
-        }
-        
-        // Ejecuta la función cuando el DOM esté completamente cargado.
-        document.addEventListener('DOMContentLoaded', setLanguage);
-    </script>
+				<!-- Main -->
+					<div id="main">
 
-</body>
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></h2>
+										<p>¿Quien es el mejor Brainrot? Vamos a averiguarlo!</p>
+									</div>
+									<!-- <div class="meta">
+										<time class="published" datetime="2015-11-01">November 1, 2015</time>
+										<a href="#" class="author"><span class="name">Moxor</span><img src="images/avatar.jpg" alt="" /></a>
+									</div> -->
+								</header>
+								<a href="super-brainrot-z-italian-power/index.html" class="image featured"><img src="images/sbzip_banner.png" alt="" /></a>
+								<p>Ya viste en Tik Tok como los demas elegía a quien le gana a quien. no estraría genial poder definirlo por toda la comunidad haciendo que pelen por trepar en un ranking? Eso pensé y tuve que hacer este juego. espero que les guste</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="super-brainrot-z-italian-power/index.html" class="button large">Mas info</a></li>
+									</ul>
+									<!-- <ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul> -->
+								</footer>
+							</article>
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="single.html">Logic Solving</a></h2>
+										<p>Descubrí el codigo y abrí la caja fuerte!</p>
+									</div>
+									<!-- <div class="meta">
+										<time class="published" datetime="2015-10-25">October 25, 2015</time>
+										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+									</div> -->
+								</header>
+								<a href="single.html" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+								<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper.</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="single.html" class="button large">Continue Reading</a></li>
+									</ul>
+									<!-- <ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul> -->
+								</footer>
+							</article>
+
+						<!-- Pagination -->
+							<!-- <ul class="actions pagination">
+								<li><a href="" class="disabled button large previous">Previous Page</a></li>
+								<li><a href="#" class="button large next">Next Page</a></li>
+							</ul> -->
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
+								<header>
+									<h2>Moxor Games</h2>
+									<p>Juegos hechos con amor desde Argentina</p>
+								</header>
+							</section>
+
+							<section id="footer">
+								<p class="copyright">Seguime en redes</p>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+								
+							</section>
+						
+						<!-- Mini Posts -->
+							<section>
+								<div class="mini-posts">
+
+									<!-- Mini Post -->
+										<article class="mini-post">
+											<header>
+												<h3><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></h3>
+												<!-- <time class="published" datetime="2015-10-20">October 20, 2015</time> -->
+												<!-- <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a> -->
+											</header>
+											<a href="single.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
+										</article>
+
+									<!-- Mini Post -->
+										<article class="mini-post">
+											<header>
+												<h3><a href="single.html">Rutrum neque accumsan</a></h3>
+												<time class="published" datetime="2015-10-19">October 19, 2015</time>
+												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+											</header>
+											<a href="single.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
+										</article>									
+								</div>
+							</section>
+
+						<!-- About -->
+							<section class="blurb">
+								<h2>Sobre mi</h2>
+								<p>Soy desarrollador de videojuegos desde hace bastante, pero siempre estuve dentro de empresas grandes y pequeñas. Disfruté mi trabajo y hoy quiero iniciar una nueva etapa, a crear mis propios juegos, con mis propias reglas.</p>
+								<!-- <ul class="actions">
+									<li><a href="#" class="button">Learn More</a></li>
+								</ul> -->
+							</section>
+
+						<!-- Footer -->
+							<section id="footer">
+								<p class="copyright">&copy; Moxor Games. Diseño: <a href="http://html5up.net">HTML5 UP</a></p>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
