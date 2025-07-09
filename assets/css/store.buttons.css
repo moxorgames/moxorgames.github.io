@@ -1,0 +1,34 @@
+.store-buttons {
+  display: flex;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.badge-wrapper img {
+  height: 60px;
+  display: block;
+}
+
+.badge-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: none;
+}
