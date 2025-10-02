@@ -13,5 +13,6 @@
   "TUNG_TUNG_TUNG_SAHUR": { "name": "Tung Tung Tung Sahur", "image": "images/fighter_tung_tung_tung_sahur.png" },
   "LA_VACA_SATURNO_SATURNITA": { "name": "La Vaca Saturno Saturnita", "image": "images/fighter_la_vaca_saturno_saturnita.png" },
   "BONECA_AMBALABU":{ "name": "Boneca Ambalabu", "image":"images/fighter_boneca_ambalabu.png"},
-  "MATEO":{"name":"Mateo", "image":"images/fighter_mateo.png"}
+  "MATEO":{"name":"Mateo", "image":"images/fighter_mateo.png"},
+  "ESPRESSONA_SIGNORA":{"name":"Espressona Signora","image":"images/fighter_espressona_signora.png"}
 }
