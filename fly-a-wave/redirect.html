@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Redirecting...</title>
+	<script>
+		window.onload = function() {
+			let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+			if (/android/i.test(userAgent)) {
+				window.location.href = "https://play.google.com/store/apps/details?id=com.moxorgames.flyawave&utm_source=qr";
+			} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				window.location.href = "https://apps.apple.com/app/id6749509602";
+			} else {
+				window.location.href = "https://moxorgames.com/fly-a-wave";
+			}
+		}
+	</script>
+</head>
+<body>
+	<p>Yendo al store...</p>
+</body>
+</html>
