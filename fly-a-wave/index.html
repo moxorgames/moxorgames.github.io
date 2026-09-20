@@ -1,91 +1,180 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Fly-A-Wave</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-	</head>
-	<body class="single is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Fly-A-Wave — Moxor Games</title>
+  <meta name="description" content="Master the cosmic currents. Fly-A-Wave is a retro, simple and addictive arcade game. Available on Google Play and the App Store." />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <meta property="og:title" content="Fly-A-Wave — Moxor Games" />
+  <meta property="og:description" content="Master the cosmic currents. A retro, simple and addictive arcade game." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.moxorgames.com/fly-a-wave/" />
+  <meta property="og:image" content="https://www.moxorgames.com/fly-a-wave/images/ilustracion_landscape_840x341.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="../assets/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Moxor Games — home">
+        <img src="../images/logo.png" alt="Moxor Games logo" />
+        <span class="brand-name">Moxor Games</span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <button class="menu-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <ul class="desktop-nav">
+          <li><a href="../index.html#games" data-i18n="nav-games">Games</a></li>
+          <li><a href="support.html" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="lang-toggle" class="btn btn--ghost btn--sm" data-i18n="switch-lang">ES</button>
+    </div>
+  </header>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="../index.html">Moxor Games</a></h1>
-					</header>
+  <div class="container">
+    <div class="page-hero">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html" data-i18n="crumb-home">Home</a>
+        <span aria-hidden="true">/</span>
+        <span class="current">Fly-A-Wave</span>
+      </nav>
+      <h1>Fly-A-Wave</h1>
+      <p class="tagline" data-i18n="flyawave-tagline">Master the cosmic currents!</p>
+      <div class="badges">
+        <span class="badge badge--live"><span data-i18n="badge-live">Live</span></span>
+        <span class="badge"><i class="fa-solid fa-mobile-screen"></i> <span data-i18n="tag-mobile">Mobile</span></span>
+      </div>
+      <div class="store-buttons">
+        <div class="badge-wrapper">
+          <a href="https://play.google.com/store/apps/details?id=com.moxorgames.flyawave&utm_source=web" target="_blank" rel="noopener">
+            <img src="../images/GetItOnGooglePlay_Badge_Web_color_Spanish-LATAM.png" alt="Disponible en Google Play">
+          </a>
+        </div>
+        <div class="badge-wrapper">
+          <a href="https://apps.apple.com/app/id6749509602" target="_blank" rel="noopener">
+            <img src="../images/Download_on_the_App_Store_Badge_ES_RGB_blk_100217.svg" alt="Disponible en App Store">
+          </a>
+        </div>
+      </div>
+    </div>
 
-				<!-- Main -->
-					<div id="main">
+    <img class="featured-image" src="images/ilustracion_landscape_840x341.png" alt="Fly-A-Wave" />
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="#">Fly-A-Wave</a></h2>
-										<p>Master the cosmic currents!</p>
-									</div>
-								</header>
+    <section class="game-description">
+      <p data-i18n="flyawave-desc-p1">It has no limitshare, no distractions. I find it very easy to enter a state of flow with this kind of game — I wanted to make something retro, simple and, at the same time, addictive. I hope you enjoy it.</p>
+      <p data-i18n="flyawave-desc-p2">Ride the cosmic currents, dodge what you have to dodge, and let the game pull you into the zone. No ads, no noise, just you and the wave.</p>
+    </section>
 
-								<div class="store-buttons">
-									<div class="badge-wrapper">
-										<a href="https://play.google.com/store/apps/details?id=com.moxorgames.flyawave&utm_source=web" target="_blank" rel="noopener">
-										<img src="../images/GetItOnGooglePlay_Badge_Web_color_Spanish-LATAM.png" alt="Disponible en Google Play">
-										</a>
-									</div>
+    <section class="section">
+      <div class="section-header">
+        <h2 data-i18n="screenshots-title">Screenshots</h2>
+        <span class="section-note">03</span>
+      </div>
+      <div class="screenshots">
+        <img src="images/screenshot_01.png" alt="Fly-A-Wave screenshot 1" loading="lazy" />
+        <img src="images/screenshot_02.png" alt="Fly-A-Wave screenshot 2" loading="lazy" />
+        <img src="images/screenshot_03.png" alt="Fly-A-Wave screenshot 3" loading="lazy" />
+      </div>
+    </section>
 
-									<div class="badge-wrapper">
-										<a href="https://apps.apple.com/app/id6749509602" target="_blank" rel="noopener">
-										<img src="../images/Download_on_the_App_Store_Badge_ES_RGB_blk_100217.svg" alt="Disponible en App Store">
-										</a>
-									</div>
+    <section class="section">
+      <div class="section-header">
+        <h2 data-i18n="related-title">More Moxor Games</h2>
+      </div>
+      <div class="related-list">
+        <a class="related-card" href="../super-brainrot-z-italian-power/index.html">
+          <img src="../super-brainrot-z-italian-power/images/banner_840x341.png" alt="Super Brainrot Z Italian Power" loading="lazy" />
+          <span class="rc-body"><strong>Super Brainrot Z Italian Power</strong><span data-i18n="related-sbz">Community versus / ranking</span></span>
+          <span class="badge badge--live"><span data-i18n="badge-live">Live</span></span>
+        </a>
+        <a class="related-card" href="../dead-run-survive-zombie-loot/index.html">
+          <img src="../dead-run-survive-zombie-loot/images/banner.jpg" alt="Dead Run: Survive Zombie Loot" loading="lazy" />
+          <span class="rc-body"><strong>Dead Run: Survive Zombie Loot</strong><span data-i18n="related-deadrun">Run, survive, loot!</span></span>
+          <span class="badge badge--soon"><span data-i18n="badge-soon">Coming soon</span></span>
+        </a>
+        <a class="related-card" href="../logic-solving/index.html">
+          <img src="../logic-solving/images/logic_solving_banner.png" alt="Logic Solving" loading="lazy" />
+          <span class="rc-body"><strong>Logic Solving</strong><span data-i18n="related-logic">Deduce the code, open the safe</span></span>
+          <span class="badge badge--hold"><span data-i18n="badge-hold">Archived</span></span>
+        </a>
+      </div>
+    </section>
+  </div>
 
-								</div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-socials">
+        <a href="https://instagram.com/moxorgames" class="fa-brands fa-instagram" target="_blank" rel="noopener"><span class="visually-hidden">Instagram</span></a>
+        <a href="https://tiktok.com/@moxorgames" class="fa-brands fa-tiktok" target="_blank" rel="noopener"><span class="visually-hidden">TikTok</span></a>
+        <a href="https://twitter.com/moxorgames" class="fa-brands fa-twitter" target="_blank" rel="noopener"><span class="visually-hidden">Twitter</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61574953059729" class="fa-brands fa-facebook-f" target="_blank" rel="noopener"><span class="visually-hidden">Facebook</span></a>
+        <a href="https://threads.net/@moxorgames" class="fa-brands fa-threads" target="_blank" rel="noopener"><span class="visually-hidden">Threads</span></a>
+        <a href="https://www.youtube.com/channel/UCX-9ptOZKJBruxxOkTMzI7Q" class="fa-brands fa-youtube" target="_blank" rel="noopener"><span class="visually-hidden">YouTube</span></a>
+        <a href="https://www.twitch.tv/moxor_games" class="fa-brands fa-twitch" target="_blank" rel="noopener"><span class="visually-hidden">Twitch</span></a>
+        <a href="mailto:moxorgames@gmail.com" class="fa-solid fa-envelope" target="_blank" rel="noopener"><span class="visually-hidden">Email</span></a>
+      </p>
+      <p class="footer-links">
+        <a href="../index.html#games" data-i18n="nav-games">Games</a>
+        <a href="../support.html" data-i18n="nav-contact">Contact</a>
+        <a href="../privacy-policy.html" data-i18n="footer-privacy">Privacy</a>
+      </p>
+      <p class="footer-copy">&copy; <span id="year">2026</span> Moxor Games. <span data-i18n="footer-made">Made with love from Argentina</span>.</p>
+    </div>
+  </footer>
 
-								<span class="image featured"><img src="images/ilustracion_landscape_1024x700.png" alt="" /></span>
-								<p>Sin límites, sin distracciones. Me pasa que es muy facil entrar en un estado de flow con este tipo de juegos, quería hacer algo retro, simple y a la vez adictivo. Espero que les guste</p>
-								
-								<p class="copyright">Seguime en redes</p>
-								<ul class="icons">
-									<li><a href="https://instagram.com/moxorgames" class="fa-brands fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
-									<li><a href="https://tiktok.com/@moxorgames" class="fa-brands fa-tiktok" target="_blank" rel="noopener"><span class="label">TikTok</span></a></li>
-									<li><a href="https://twitter.com/moxorgames" class="fa-brands fa-twitter" target="_blank" rel="noopener"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/profile.php?id=61574953059729" class="fa-brands fa-facebook-f" target="_blank" rel="noopener"><span class="label">Facebook</span></a></li>
-									<li><a href="https://threads.net/@moxorgames" class="fa-brands fa-threads" target="_blank" rel="noopener"><span class="label">Threads</span></a></li>
-									<li><a href="https://www.youtube.com/channel/UCX-9ptOZKJBruxxOkTMzI7Q" class="fa-brands fa-youtube" target="_blank" rel="noopener"><span class="label">YouTube</span></a></li>
-									<li><a href="https://www.twitch.tv/moxor_games" class="fa-brands fa-twitch" target="_blank" rel="noopener"><span class="label">Twitch</span></a></li>
-								</ul>
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
-						<p class="copyright"><a href="privacy.html">Privacy</a>.</p>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-
-	</body>
+  <script>
+    window.MOXOR_I18N = {
+      en: {
+        "switch-lang": "ES",
+        "nav-games": "Games",
+        "nav-contact": "Contact",
+        "crumb-home": "Home",
+        "badge-live": "Live",
+        "tag-mobile": "Mobile",
+        "flyawave-tagline": "Master the cosmic currents!",
+        "flyawave-desc-p1": "No limits, no distractions. I find it very easy to enter a state of flow with this kind of game — I wanted to make something retro, simple and, at the same time, addictive. I hope you enjoy it.",
+        "flyawave-desc-p2": "Ride the cosmic currents, dodge what you have to dodge, and let the game pull you into the zone. No ads, no noise, just you and the wave.",
+        "screenshots-title": "Screenshots",
+        "related-title": "More Moxor Games",
+        "related-sbz": "Community versus / ranking",
+        "related-deadrun": "Run, survive, loot!",
+        "related-logic": "Deduce the code, open the safe",
+        "badge-soon": "Coming soon",
+        "badge-hold": "Archived project",
+        "footer-privacy": "Privacy",
+        "footer-made": "Made with love from Argentina"
+      },
+      es: {
+        "switch-lang": "EN",
+        "nav-games": "Juegos",
+        "nav-contact": "Contacto",
+        "crumb-home": "Inicio",
+        "badge-live": "Disponible",
+        "tag-mobile": "Móvil",
+        "flyawave-tagline": "¡Dominá las corrientes cósmicas!",
+        "flyawave-desc-p1": "Sin límites, sin distracciones. Me pasa que es muy fácil entrar en un estado de flow con este tipo de juegos, quería hacer algo retro, simple y a la vez adictivo. Espero que les guste.",
+        "flyawave-desc-p2": "Navegá las corrientes cósmicas, esquivá lo que tengas que esquivar y deja que el juego te meta en la zona. Sin anuncios, sin ruido, solo vos y la ola.",
+        "screenshots-title": "Capturas",
+        "related-title": "Más de Moxor Games",
+        "related-sbz": "Versus comunitario / ranking",
+        "related-deadrun": "Corré, sobreviví, juntá el botín!",
+        "related-logic": "Descubrí el código, abrí la caja",
+        "badge-soon": "Próximamente",
+        "badge-hold": "Proyecto pausado",
+        "footer-privacy": "Privacidad",
+        "footer-made": "Hecho con amor desde Argentina"
+      }
+    };
+  </script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

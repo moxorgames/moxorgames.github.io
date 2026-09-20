@@ -1,210 +1,354 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Moxor Games</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/x-icon" href="/favicon.png">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<!-- ============================================================
+     Moxor Games — Studio homepage
+     ES/EN via assets/js/i18n.js (browser-language aware, EN default)
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title data-i18n="page-title">Moxor Games — Indie game studio from Argentina</title>
+  <meta name="description" data-i18n-attr="content:page-desc" content="Moxor Games is an indie game studio from Argentina. Play Fly-A-Wave, Super Brainrot Z Italian Power, Dead Run: Survive Zombie Loot and more." />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="canonical" href="https://www.moxorgames.com/" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Moxor Games" />
+  <meta property="og:url" content="https://www.moxorgames.com/" />
+  <meta property="og:title" content="Moxor Games — Indie game studio from Argentina" />
+  <meta property="og:description" content="Play Fly-A-Wave, Super Brainrot Z Italian Power, Dead Run: Survive Zombie Loot and more." />
+  <meta property="og:image" content="https://www.moxorgames.com/images/logo.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@moxorgames" />
+  <meta name="twitter:title" content="Moxor Games" />
+  <meta name="twitter:description" content="Indie games from Argentina. Fly-A-Wave, Super Brainrot Z, Dead Run and more." />
+  <meta name="twitter:image" content="https://www.moxorgames.com/images/logo.png" />
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Moxor Games</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="fly-a-wave/index.html">Fly-A-Wave</a></li>
-								<li><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></li>
-								<li><a href="logic-solving/index.html">Logic Solving</a></li>
-								<li><a href="dead-run-survive-zombie-loot/index.html">Dead Run</a></li>
-							</ul>
-						</nav>
-					</header>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="stylesheet" href="assets/css/store.buttons.css" />
+</head>
+<body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Moxor Games — home">
+        <img src="images/logo.png" alt="Moxor Games logo" />
+        <span class="brand-name">Moxor Games</span>
+      </a>
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="dead-run-survive-zombie-loot/index.html">Dead Run: Survive Zombie Loot</a></h2>
-										<p>Survive the zombie apocalypse and collect the loot!</p>
-									</div>
-								</header>
-								<a href="dead-run-survive-zombie-loot/index.html" class="image featured"><img src="dead-run-survive-zombie-loot/images/banner.jpg" alt="" /></a>
-								<p>Run for your life! In Dead Run: Survive Zombie Loot, your goal is to survive in a post-apocalyptic world infested with zombies while collecting supplies and loot. Avoid the hordes, manage your resources, and get as far as you can. Do you have what it takes to survive?</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="dead-run-survive-zombie-loot/index.html" class="button large">More info</a></li>
-									</ul>
-								</footer>
-							</article>
+      <nav class="main-nav">
+        <div class="links">
+          <a href="#games" data-i18n="nav-games">Games</a>
+          <a href="#about" data-i18n="nav-about">About</a>
+          <a href="support.html" data-i18n="nav-contact">Contact</a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      </nav>
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="fly-a-wave/index.html">Fly-A-Wave</a></h2>
-										<p>Master the cosmic currents!</p>
-									</div>
-								</header>
-								<a href="fly-a-wave/index.html" class="image featured"><img src="fly-a-wave/images/ilustracion_landscape_840x341.png" alt="" /></a>
-								<p>Sin límites, sin distracciones. Me pasa que es muy facil entrar en un estado de flow con este tipo de juegos, quería hacer algo retro, simple y a la vez adictivo. Espero que les guste</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="fly-a-wave/index.html" class="button large">Mas info</a></li>
-									</ul>
-								</footer>
-							</article>
+      <button id="lang-toggle" class="lang-toggle" type="button" data-i18n-attr="aria-label:switch-lang" aria-label="Switch language"></button>
+    </div>
+    <nav id="menu" class="mobile-menu" hidden>
+      <a href="#games" data-i18n="nav-games">Games</a>
+      <a href="#about" data-i18n="nav-about">About</a>
+      <a href="support.html" data-i18n="nav-contact">Contact</a>
+    </nav>
+  </header>
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></h2>
-										<p>¿Quien es el mejor Brainrot? Vamos a averiguarlo!</p>
-									</div>
-								</header>
-								<a href="super-brainrot-z-italian-power/index.html" class="image featured"><img src="super-brainrot-z-italian-power/images/banner_840x341.png" alt="" /></a>
-								<p>Ya viste en Tik Tok como los demas elegían quien le gana a quien. No estraría genial poder definirlo con toda la comunidad haciendo que pelen por trepar en un ranking? Eso pensé y tuve que hacer este juego. espero que les guste</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="super-brainrot-z-italian-power/index.html" class="button large">Mas info</a></li>
-									</ul>
-								</footer>
-							</article>
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="container">
+      <img class="hero-logo" src="images/logo.png" alt="Moxor Games logo" width="112" height="112" />
+      <h1 data-i18n="hero-title">Games with love, from Argentina.</h1>
+      <p class="lead" data-i18n="hero-lead">Moxor Games is an indie game studio based in Rosario, Argentina. We make small, focused mobile games — retro vibes, simple rules, endless replay.</p>
+      <div class="hero-actions">
+        <a href="#games" class="btn btn--primary btn--lg" data-i18n="hero-cta">Browse games</a>
+        <a href="support.html" class="btn btn--ghost btn--lg" data-i18n="hero-support">Get support</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://instagram.com/moxorgames" class="fa-brands fa-instagram" target="_blank" rel="noopener" aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
+        <a href="https://tiktok.com/@moxorgames" class="fa-brands fa-tiktok" target="_blank" rel="noopener" aria-label="TikTok"><span class="visually-hidden">TikTok</span></a>
+        <a href="https://twitter.com/moxorgames" class="fa-brands fa-twitter" target="_blank" rel="noopener" aria-label="Twitter"><span class="visually-hidden">Twitter</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61574953059729" class="fa-brands fa-facebook-f" target="_blank" rel="noopener" aria-label="Facebook"><span class="visually-hidden">Facebook</span></a>
+        <a href="https://threads.net/@moxorgames" class="fa-brands fa-threads" target="_blank" rel="noopener" aria-label="Threads"><span class="visually-hidden">Threads</span></a>
+        <a href="https://www.youtube.com/channel/UCX-9ptOZKJBruxxOkTMzI7Q" class="fa-brands fa-youtube" target="_blank" rel="noopener" aria-label="YouTube"><span class="visually-hidden">YouTube</span></a>
+        <a href="https://www.twitch.tv/moxor_games" class="fa-brands fa-twitch" target="_blank" rel="noopener" aria-label="Twitch"><span class="visually-hidden">Twitch</span></a>
+      </div>
+    </div>
+  </section>
 
-						<!-- Post -->
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="logic-solving/index.html">Logic Solving</a></h2>
-										<p>Descubrí el codigo y abrí la caja fuerte!</p>
-									</div>
-								</header>
-								<a href="logic-solving/index.html" class="image featured"><img src="logic-solving/images/logic_solving_banner.png" alt="" /></a>
-								<p>Cada error es una oportunidad para aprender. En Logic Solving los errores se convierten en pistas valiosas para deducir la clave secreta</p>
-								<footer>
-									<ul class="actions">
-										<li><a href="logic-solving/index.html" class="button large">Mas info</a></li>
-									</ul>
-									<!-- <ul class="stats">
-										<li><a href="#">General</a></li>
-										<li><a href="#" class="icon solid fa-heart">28</a></li>
-										<li><a href="#" class="icon solid fa-comment">128</a></li>
-									</ul> -->
-								</footer>
-							</article>
-					</div>
+  <!-- ============ Featured ============ -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="featured-title">Featured games</h2>
+        <p class="section-note" data-i18n="featured-note">Playable today</p>
+      </div>
 
-				<!-- Sidebar -->
-					<section id="sidebar">
+      <div class="featured-grid">
 
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
-								<header>
-									<h2>Moxor Games</h2>
-									<p>Juegos hechos con amor desde Argentina</p>
-								</header>
-							</section>
+        <!-- Fly-A-Wave -->
+        <article class="game-card featured">
+          <div class="media">
+            <a href="fly-a-wave/index.html"><img src="fly-a-wave/images/ilustracion_landscape_840x341.png" alt="Fly-A-Wave" loading="lazy" /></a>
+            <span class="badge badge--live"><span data-i18n="featured-badge">Featured</span></span>
+          </div>
+          <div class="card-body">
+            <h3><a href="fly-a-wave/index.html">Fly-A-Wave</a></h3>
+            <p class="card-desc" data-i18n="flyawave-desc">Master the cosmic currents. A retro, simple and addictive arcade game that pulls you right into the flow.</p>
+            <div class="platform-pills">
+              <span class="pill"><i class="fa-solid fa-mobile-screen"></i><span data-i18n="pill-mobile">Mobile</span></span>
+              <span class="pill"><i class="fa-solid fa-globe"></i><span data-i18n="pill-arcade">Arcade</span></span>
+              <span class="pill"><i class="fa-solid fa-bolt"></i><span data-i18n="pill-flow">Easy to learn</span></span>
+            </div>
+            <div class="card-actions">
+              <a href="fly-a-wave/index.html" class="btn btn--primary btn--sm" data-i18n="more-info">More info</a>
+            </div>
+          </div>
+        </article>
 
-							<section id="footer">
-								<p class="copyright">Seguime en redes</p>
-								<ul class="icons">
-									<li><a href="https://instagram.com/moxorgames" class="fa-brands fa-instagram" target="_blank" rel="noopener"><span class="label">Instagram</span></a></li>
-									<li><a href="https://tiktok.com/@moxorgames" class="fa-brands fa-tiktok" target="_blank" rel="noopener"><span class="label">TikTok</span></a></li>
-									<li><a href="https://twitter.com/moxorgames" class="fa-brands fa-twitter" target="_blank" rel="noopener"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/profile.php?id=61574953059729" class="fa-brands fa-facebook-f" target="_blank" rel="noopener"><span class="label">Facebook</span></a></li>
-									<li><a href="https://threads.net/@moxorgames" class="fa-brands fa-threads" target="_blank" rel="noopener"><span class="label">Threads</span></a></li>
-									<li><a href="https://www.youtube.com/channel/UCX-9ptOZKJBruxxOkTMzI7Q" class="fa-brands fa-youtube" target="_blank" rel="noopener"><span class="label">YouTube</span></a></li>
-									<li><a href="https://www.twitch.tv/moxor_games" class="fa-brands fa-twitch" target="_blank" rel="noopener"><span class="label">Twitch</span></a></li>
-								</ul>
-							</section>
+        <!-- Super Brainrot Z -->
+        <article class="game-card featured">
+          <div class="media">
+            <a href="super-brainrot-z-italian-power/index.html"><img src="super-brainrot-z-italian-power/images/banner_840x341.png" alt="Super Brainrot Z Italian Power" loading="lazy" /></a>
+            <span class="badge badge--live"><span data-i18n="featured-badge">Featured</span></span>
+          </div>
+          <div class="card-body">
+            <h3><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></h3>
+            <p class="card-desc" data-i18n="sbz-desc">Who's the best Brainrot? Find out! Pick your favorite and fight your way to the top of the community ranking.</p>
+            <div class="platform-pills">
+              <span class="pill"><i class="fa-solid fa-mobile-screen"></i><span data-i18n="pill-mobile">Mobile</span></span>
+              <span class="pill"><i class="fa-solid fa-ranking-star"></i><span data-i18n="pill-ranking">Community ranking</span></span>
+              <span class="pill"><i class="fa-solid fa-gamepad"></i><span data-i18n="pill-vs">Versus</span></span>
+            </div>
+            <div class="card-actions">
+              <a href="super-brainrot-z-italian-power/index.html" class="btn btn--primary btn--sm" data-i18n="more-info">More info</a>
+            </div>
+          </div>
+        </article>
 
-							<section id="footer">
-								<p class="copyright"><a href="support.html">Contacto y soporte</a></p>
-								<ul class="icons">
-									<li><a href="mailto:moxorgames@gmail.com" class="fa-solid fa-envelope" target="_blank" rel="noopener"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-						
-						<!-- Mini Posts -->
-							<section>
-								<div class="mini-posts">
+      </div>
+    </div>
+  </section>
 
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="dead-run-survive-zombie-loot/index.html">Dead Run: Survive Zombie Loot</a></h3>
-											</header>
-											<a href="dead-run-survive-zombie-loot/index.html" class="image"><img src="images/dead-run-logo-v1.png" alt="" /></a>
-										</article>
+  <!-- ============ All games ============ -->
+  <section class="section" id="games">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="games-title">All games</h2>
+        <p class="section-note" data-i18n="games-note">Shipping & upcoming</p>
+      </div>
 
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="fly-a-wave/index.html">Fly-A-Wave</a></h3>
-											</header>
-											<a href="fly-a-wave/index.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
-										</article>
+      <div class="game-grid">
 
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></h3>
-												<!-- <time class="published" datetime="2015-10-20">October 20, 2015</time> -->
-												<!-- <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a> -->
-											</header>
-											<a href="super-brainrot-z-italian-power/index.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
-										</article>
+        <!-- Fly-A-Wave -->
+        <article class="game-card">
+          <div class="media">
+            <a href="fly-a-wave/index.html"><img src="fly-a-wave/images/ilustracion_landscape_840x341.png" alt="Fly-A-Wave" loading="lazy" /></a>
+            <span class="badge badge--live"><span data-i18n="badge-live">Live</span></span>
+          </div>
+          <div class="card-body">
+            <h3><a href="fly-a-wave/index.html">Fly-A-Wave</a></h3>
+            <div class="platform-pills">
+              <span class="pill"><i class="fa-brands fa-google-play"></i> Google Play</span>
+              <span class="pill"><i class="fa-brands fa-apple"></i> App Store</span>
+            </div>
+            <div class="card-actions"><a href="fly-a-wave/index.html" class="btn btn--ghost btn--sm" data-i18n="learn-more">Learn more</a></div>
+          </div>
+        </article>
 
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="logic-solving/index.html">Logic Solving</a></h3>
-												<!-- <time class="published" datetime="2015-10-19">October 19, 2015</time> -->
-												<!-- <a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a> -->
-											</header>
-											<a href="logic-solving/index.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
-										</article>									
-								</div>
-							</section>
+        <!-- Super Brainrot Z -->
+        <article class="game-card">
+          <div class="media">
+            <a href="super-brainrot-z-italian-power/index.html"><img src="super-brainrot-z-italian-power/images/banner_840x341.png" alt="Super Brainrot Z" loading="lazy" /></a>
+            <span class="badge badge--live"><span data-i18n="badge-live">Live</span></span>
+          </div>
+          <div class="card-body">
+            <h3><a href="super-brainrot-z-italian-power/index.html">Super Brainrot Z Italian Power</a></h3>
+            <div class="platform-pills">
+              <span class="pill"><i class="fa-brands fa-apple"></i> App Store</span>
+              <span class="pill"><i class="fa-brands fa-google-play"></i> Google Play</span>
+              <span class="pill"><i class="fa-brands fa-itch-io"></i> Itch.io</span>
+            </div>
+            <div class="card-actions"><a href="super-brainrot-z-italian-power/index.html" class="btn btn--ghost btn--sm" data-i18n="learn-more">Learn more</a></div>
+          </div>
+        </article>
 
-						<!-- About -->
-							<section class="blurb">
-								<h2>Sobre Moxor Games</h2>
-								<p>Los videojuegos son mi pasión y tuve la suerte de lograr hacer que sean tambien mi trabajo. En este espacio quiero compartir mis juegos con el mundo.</p>
-								<!-- <ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul> -->
-							</section>
+        <!-- Dead Run -->
+        <article class="game-card">
+          <div class="media">
+            <a href="dead-run-survive-zombie-loot/index.html"><img src="dead-run-survive-zombie-loot/images/banner.jpg" alt="Dead Run: Survive Zombie Loot" loading="lazy" /></a>
+            <span class="badge badge--soon"><span data-i18n="badge-soon">Coming soon</span></span>
+          </div>
+          <div class="card-body">
+            <h3><a href="dead-run-survive-zombie-loot/index.html">Dead Run: Survive Zombie Loot</a></h3>
+            <div class="platform-pills">
+              <span class="pill"><i class="fa-brands fa-google-play"></i> Google Play</span>
+              <span class="pill"><i class="fa-brands fa-apple"></i> App Store</span>
+            </div>
+            <div class="card-actions"><a href="dead-run-survive-zombie-loot/index.html" class="btn btn--ghost btn--sm" data-i18n="learn-more">Learn more</a></div>
+          </div>
+        </article>
 
-						<!-- Footer -->
-							<section id="footer">
-								<p class="copyright">&copy; Moxor Games. Diseño: <a href="http://html5up.net">HTML5 UP</a></p>
-							</section>
+        <!-- Logic Solving -->
+        <article class="game-card">
+          <div class="media">
+            <a href="logic-solving/index.html"><img src="logic-solving/images/logic_solving_banner.png" alt="Logic Solving" loading="lazy" /></a>
+            <span class="badge badge--soon"><span data-i18n="badge-hold">On hold</span></span>
+          </div>
+          <div class="card-body">
+            <h3><a href="logic-solving/index.html">Logic Solving</a></h3>
+            <div class="platform-pills">
+              <span class="pill"><i class="fa-solid fa-pause"></i><span data-i18n="pill-onhold">Archived project</span></span>
+            </div>
+            <div class="card-actions"><a href="logic-solving/index.html" class="btn btn--ghost btn--sm" data-i18n="learn-more">Learn more</a></div>
+          </div>
+        </article>
 
-					</section>
+      </div>
+    </div>
+  </section>
 
-			</div>
+  <!-- ============ About ============ -->
+  <section class="section" id="about">
+    <div class="container container--narrow">
+      <div class="section-header">
+        <h2 data-i18n="about-title">About Moxor Games</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3 data-i18n="about-who-title">Who we are</h3>
+          <p data-i18n="about-who-text">Video games are my passion, and I was lucky enough to make them my job too. Moxor Games is the space where I share those games with the world.</p>
+        </div>
+        <div class="about-card">
+          <h3 data-i18n="about-make-title">What we make</h3>
+          <p data-i18n="about-make-text">Small, focused mobile games. Retro visuals, simple rules-of-thumb, and a lot of love poured into the details.</p>
+        </div>
+        <div class="about-card">
+          <h3 data-i18n="about-where-title">Where we are</h3>
+          <p data-i18n="about-where-text">Made in Rosario, Argentina. We speak Spanish and English.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links">
+        <a href="#games" data-i18n="nav-games">Games</a>
+        <a href="#about" data-i18n="nav-about">About</a>
+        <a href="support.html" data-i18n="nav-contact">Contact</a>
+        <a href="privacy-policy.html" data-i18n="footer-privacy">Privacy Policy</a>
+      </nav>
 
-	</body>
+      <ul class="footer-socials">
+        <li><a href="https://instagram.com/moxorgames" class="fa-brands fa-instagram" target="_blank" rel="noopener" aria-label="Instagram"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a href="https://tiktok.com/@moxorgames" class="fa-brands fa-tiktok" target="_blank" rel="noopener" aria-label="TikTok"><span class="visually-hidden">TikTok</span></a></li>
+        <li><a href="https://twitter.com/moxorgames" class="fa-brands fa-twitter" target="_blank" rel="noopener" aria-label="Twitter"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61574953059729" class="fa-brands fa-facebook-f" target="_blank" rel="noopener" aria-label="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a href="https://threads.net/@moxorgames" class="fa-brands fa-threads" target="_blank" rel="noopener" aria-label="Threads"><span class="visually-hidden">Threads</span></a></li>
+        <li><a href="https://www.youtube.com/channel/UCX-9ptOZKJBruxxOkTMzI7Q" class="fa-brands fa-youtube" target="_blank" rel="noopener" aria-label="YouTube"><span class="visually-hidden">YouTube</span></a></li>
+        <li><a href="https://www.twitch.tv/moxor_games" class="fa-brands fa-twitch" target="_blank" rel="noopener" aria-label="Twitch"><span class="visually-hidden">Twitch</span></a></li>
+        <li><a href="mailto:moxorgames@gmail.com" class="fa-solid fa-envelope" target="_blank" rel="noopener" aria-label="Email"><span class="visually-hidden">Email</span></a></li>
+        <li><a href="https://linktr.ee/moxorgames" class="fa-solid fa-heart" target="_blank" rel="noopener" aria-label="Linktree"><span class="visually-hidden">Linktree</span></a></li>
+      </ul>
+
+      <p class="footer-copy">&copy; <span id="year">2025</span> Moxor Games. <span data-i18n="made-in">Made in Rosario, Argentina</span>.</p>
+    </div>
+  </footer>
+
+  <!-- ============ i18n ============ -->
+  <script>
+    window.MOXOR_I18N = {
+      en: {
+        "page-title": "Moxor Games — Indie game studio from Argentina",
+        "page-desc": "Moxor Games is an indie game studio from Argentina. Play Fly-A-Wave, Super Brainrot Z Italian Power, Dead Run: Survive Zombie Loot and more.",
+        "switch-lang": "Switch language",
+        "nav-games": "Games",
+        "nav-about": "About",
+        "nav-contact": "Contact",
+        "hero-title": "Games with love, from Argentina.",
+        "hero-lead": "Moxor Games is an indie game studio based in Rosario, Argentina. We make small, focused mobile games — retro vibes, simple rules, endless replay.",
+        "hero-cta": "Browse games",
+        "hero-support": "Get support",
+        "featured-title": "Featured games",
+        "featured-note": "Playable today",
+        "featured-badge": "Featured",
+        "pill-mobile": "Mobile",
+        "pill-arcade": "Arcade",
+        "pill-flow": "Easy to learn",
+        "pill-ranking": "Community ranking",
+        "pill-vs": "Versus",
+        "pill-onhold": "Archived project",
+        "flyawave-desc": "Master the cosmic currents. A retro, simple and addictive arcade game that pulls you right into the flow.",
+        "sbz-desc": "Who's the best Brainrot? Find out! Pick your favorite and fight your way to the top of the community ranking.",
+        "games-title": "All games",
+        "games-note": "Shipping & upcoming",
+        "badge-live": "Live",
+        "badge-soon": "Coming soon",
+        "badge-hold": "On hold",
+        "learn-more": "Learn more",
+        "more-info": "More info",
+        "about-title": "About Moxor Games",
+        "about-who-title": "Who we are",
+        "about-who-text": "Video games are my passion, and I was lucky enough to make them my job too. Moxor Games is the space where I share those games with the world.",
+        "about-make-title": "What we make",
+        "about-make-text": "Small, focused mobile games. Retro visuals, simple rules-of-thumb, and a lot of love poured into the details.",
+        "about-where-title": "Where we are",
+        "about-where-text": "Made in Rosario, Argentina. We speak Spanish and English.",
+        "footer-privacy": "Privacy Policy",
+        "made-in": "Made in Rosario, Argentina"
+      },
+      es: {
+        "page-title": "Moxor Games — Estudio indie de juegos desde Argentina",
+        "page-desc": "Moxor Games es un estudio indie de juegos desde Argentina. Jugá Fly-A-Wave, Super Brainrot Z Italian Power, Dead Run: Survive Zombie Loot y más.",
+        "switch-lang": "Cambiar idioma",
+        "nav-games": "Juegos",
+        "nav-about": "Nosotros",
+        "nav-contact": "Contacto",
+        "hero-title": "Juegos hechos con amor, desde Argentina.",
+        "hero-lead": "Moxor Games es un estudio indie de juegos con base en Rosario, Argentina. Hacemos juegos móviles chicos y enfocados: vibra retro, reglas simples y mucha rejugabilidad.",
+        "hero-cta": "Ver juegos",
+        "hero-support": "Obtener soporte",
+        "featured-title": "Juegos destacados",
+        "featured-note": "Disponibles hoy",
+        "featured-badge": "Destacado",
+        "pill-mobile": "Móvil",
+        "pill-arcade": "Arcade",
+        "pill-flow": "Fácil de aprender",
+        "pill-ranking": "Ranking comunitario",
+        "pill-vs": "Versus",
+        "pill-onhold": "Proyecto archivado",
+        "flyawave-desc": "Dominá las corrientes cósmicas. Un juego arcade retro, simple y adictivo que te mete de lleno en el flow.",
+        "sbz-desc": "¿Quién es el mejor Brainrot? ¡Vamos a averiguarlo! Elegí a tu favorito y pelean por trepar al top del ranking comunitario.",
+        "games-title": "Todos los juegos",
+        "games-note": "Lanzados y próximos",
+        "badge-live": "Disponible",
+        "badge-soon": "Próximamente",
+        "badge-hold": "En pausa",
+        "learn-more": "Saber más",
+        "more-info": "Más info",
+        "about-title": "Sobre Moxor Games",
+        "about-who-title": "Quiénes somos",
+        "about-who-text": "Los videojuegos son mi pasión y tuve la suerte de lograr que sean también mi trabajo. Moxor Games es el espacio donde quiero compartir mis juegos con el mundo.",
+        "about-make-title": "Qué hacemos",
+        "about-make-text": "Juegos móviles chicos y enfocados. Visual retro, reglas simples y mucho amor en los detalles.",
+        "about-where-title": "Dónde estamos",
+        "about-where-text": "Hecho en Rosario, Argentina. Hablamos español e inglés.",
+        "footer-privacy": "Política de Privacidad",
+        "made-in": "Hecho en Rosario, Argentina"
+      }
+    };
+  </script>
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    // Keep the current year fresh.
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

@@ -1,95 +1,56 @@
-/*
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* ============================================================
+   Moxor Games — main.js
+   Tiny shared behaviors: mobile menu toggle, footer year,
+   smooth-scroll anchor links. No framework required.
+   ============================================================ */
+(function (w, d) {
+  "use strict";
 
-(function($) {
+  /* ---------- Mobile menu ---------- */
+  var toggle = d.getElementById("menu-toggle");
+  var menu = d.getElementById("mobile-menu");
+  if (toggle && menu) {
+    toggle.addEventListener("click", function () {
+      var open = menu.getAttribute("hidden") === null;
+      if (open) {
+        menu.setAttribute("hidden", "");
+        toggle.setAttribute("aria-expanded", "false");
+      } else {
+        menu.removeAttribute("hidden");
+        toggle.setAttribute("aria-expanded", "true");
+      }
+    });
+  }
 
-	var	$window = $(window),
-		$body = $('body'),
-		$menu = $('#menu'),
-		$sidebar = $('#sidebar'),
-		$main = $('#main');
+  /* Close mobile menu when a link inside it is clicked */
+  if (menu) {
+    menu.addEventListener("click", function (e) {
+      if (e.target && e.target.tagName === "A") {
+        menu.setAttribute("hidden", "");
+        toggle && toggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ null,      '480px'  ]
-		});
+  /* ---------- Footer year ---------- */
+  var year = d.getElementById("footer-year");
+  if (year) year.textContent = String(new Date().getFullYear());
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
-
-	// Menu.
-		$menu
-			.appendTo($body)
-			.panel({
-				delay: 500,
-				hideOnClick: true,
-				hideOnSwipe: true,
-				resetScroll: true,
-				resetForms: true,
-				side: 'right',
-				target: $body,
-				visibleClass: 'is-menu-visible'
-			});
-
-	// Search (header).
-		var $search = $('#search'),
-			$search_input = $search.find('input');
-
-		$body
-			.on('click', '[href="#search"]', function(event) {
-
-				event.preventDefault();
-
-				// Not visible?
-					if (!$search.hasClass('visible')) {
-
-						// Reset form.
-							$search[0].reset();
-
-						// Show.
-							$search.addClass('visible');
-
-						// Focus input.
-							$search_input.focus();
-
-					}
-
-			});
-
-		$search_input
-			.on('keydown', function(event) {
-
-				if (event.keyCode == 27)
-					$search_input.blur();
-
-			})
-			.on('blur', function() {
-				window.setTimeout(function() {
-					$search.removeClass('visible');
-				}, 100);
-			});
-
-	// Intro.
-		var $intro = $('#intro');
-
-		// Move to main on <=large, back to sidebar on >large.
-			breakpoints.on('<=large', function() {
-				$intro.prependTo($main);
-			});
-
-			breakpoints.on('>large', function() {
-				$intro.prependTo($sidebar);
-			});
-
-})(jQuery);
+  /* ---------- Smooth scroll for same-page anchors ---------- */
+  var a, href, target, i;
+  var links = d.getElementsByTagName("a");
+  for (i = 0; i < links.length; i++) {
+    a = links[i];
+    href = a.getAttribute("href");
+    if (href && href.indexOf("#") === 0 && href.length > 1) {
+      (function (lnk, id) {
+        lnk.addEventListener("click", function (e) {
+          target = d.getElementById(id);
+          if (!target) return;
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      })(a, href.slice(1));
+    }
+  }
+})(window, document);
