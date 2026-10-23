@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    pageTitle: "Moxor Games — Redesign wireframe",
+    pageTitle: "Moxor Games — Home visual direction",
     skip: "Skip to content",
     homeLabel: "Moxor Games home",
     navLabel: "Primary navigation",
@@ -48,10 +48,10 @@ const translations = {
     pressPending: "Press kit page — next wireframe",
     contactTitle: "Contact",
     privacy: "Privacy",
-    prototypeLabel: "Navigable wireframe · not final visual design"
+    prototypeLabel: "Visual direction v1 · review build"
   },
   es: {
-    pageTitle: "Moxor Games — Wireframe del rediseño",
+    pageTitle: "Moxor Games — Dirección visual de la home",
     skip: "Saltar al contenido",
     homeLabel: "Inicio de Moxor Games",
     navLabel: "Navegación principal",
@@ -99,7 +99,7 @@ const translations = {
     pressPending: "Página de prensa — próximo wireframe",
     contactTitle: "Contacto",
     privacy: "Privacidad",
-    prototypeLabel: "Wireframe navegable · no es el diseño visual final"
+    prototypeLabel: "Dirección visual v1 · versión para revisión"
   }
 };
 

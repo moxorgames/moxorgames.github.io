@@ -6,11 +6,12 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta
       name="description"
-      content="Navigable home-page wireframe for the Moxor Games redesign."
+      content="Visual direction prototype for the Moxor Games home-page redesign."
     />
-    <title>Moxor Games — Redesign wireframe</title>
+    <title>Moxor Games — Home visual direction</title>
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="styles.css" />
-    <script src="wireframe.js" defer></script>
+    <script src="prototype.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -62,6 +63,7 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-orbit" aria-hidden="true"></div>
         <div class="hero-media" aria-hidden="true">
           <picture>
             <source media="(max-width: 767px)" srcset="assets/images/fly-gameplay-01.png" />
@@ -73,20 +75,15 @@
               fetchpriority="high"
             />
           </picture>
+          <span class="poster-edge poster-edge-top"></span>
+          <span class="poster-edge poster-edge-bottom"></span>
         </div>
         <div class="hero-scrim" aria-hidden="true"></div>
 
-        <div class="wireframe-note hero-note" data-i18n="heroAssetNote">
-          Pending: local gameplay loop
-        </div>
-
         <div class="hero-content shell">
           <p class="eyebrow" data-i18n="featured">Featured game</p>
-          <h1 id="hero-title">Fly-A-Wave</h1>
+          <h1 id="hero-title"><span>Fly-A-</span><span>Wave</span></h1>
           <p class="hero-tagline" data-i18n="flyTagline">Master the cosmic currents.</p>
-          <p class="hero-copy" data-i18n="flyCopy">
-            Ride shifting currents and find your flow in a compact cosmic arcade game.
-          </p>
 
           <div class="store-actions" aria-label="Download Fly-A-Wave" data-i18n-aria-label="flyDownloadLabel">
             <a
@@ -116,6 +113,7 @@
         </div>
 
         <a class="scroll-cue" href="#games">
+          <span class="scroll-line" aria-hidden="true"></span>
           <span data-i18n="exploreGames">Explore games</span>
           <span aria-hidden="true">↓</span>
         </a>
@@ -140,7 +138,6 @@
               height="1024"
               loading="lazy"
             />
-            <span class="wireframe-note" data-i18n="existingArt">Existing art</span>
           </div>
 
           <div class="stage-copy reveal">
@@ -204,7 +201,6 @@
               height="500"
               loading="lazy"
             />
-            <span class="wireframe-note" data-i18n="gameplayPending">Pending: gameplay captures</span>
           </div>
         </div>
       </section>
@@ -238,10 +234,11 @@
       <section class="about-section" id="about" aria-labelledby="about-title">
         <div class="shell about-grid">
           <div class="avatar-placeholder reveal" role="img" aria-label="Creator illustration placeholder" data-i18n-aria-label="avatarLabel">
-            <div class="avatar-mark" aria-hidden="true">MC</div>
+            <span class="avatar-index" aria-hidden="true">PORTRAIT / 01</span>
             <p data-i18n="avatarPending">Pending: creator illustration, 1600 × 1600</p>
           </div>
           <div class="about-copy reveal">
+            <p class="about-name">Maximiliano Cambiaso</p>
             <h2 id="about-title" data-i18n="aboutTitle">A solo indie studio</h2>
             <p class="about-lead" data-i18n="aboutLead">
               Moxor Games is the solo indie studio of Maximiliano Cambiaso, based in Tigre, Buenos Aires, Argentina.
@@ -249,7 +246,6 @@
             <p data-i18n="aboutBody">
               I make approachable games with a clear hook, expressive worlds and enough personality to stay with you after a short session.
             </p>
-            <span class="wireframe-note inline-note" data-i18n="copyDraft">Draft copy — pending approval</span>
           </div>
         </div>
       </section>
@@ -257,11 +253,12 @@
       <section class="press-section" id="press" aria-labelledby="press-title">
         <div class="shell press-layout">
           <div class="press-copy reveal">
+            <p class="section-index">STUDIO / MEDIA</p>
             <h2 id="press-title" data-i18n="pressTitle">Press &amp; media</h2>
             <p data-i18n="pressCopy">
               Verified game facts, logos, screenshots, videos and studio information in one place.
             </p>
-            <span class="status press-placeholder" data-i18n="pressPending">Press kit page — next wireframe</span>
+            <span class="press-status" data-i18n="pressPending">Press kit page — next wireframe</span>
           </div>
           <div class="contact-block reveal" id="support">
             <h3 data-i18n="contactTitle">Contact</h3>
@@ -296,7 +293,7 @@
           <p>© <span data-current-year>2026</span> Moxor Games</p>
         </div>
       </div>
-      <p class="prototype-label" data-i18n="prototypeLabel">Navigable wireframe · not final visual design</p>
+      <p class="prototype-label" data-i18n="prototypeLabel">Visual direction v1 · review build</p>
     </footer>
   </body>
 </html>

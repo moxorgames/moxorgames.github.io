@@ -4,12 +4,13 @@
 
 ## Status
 
-- Phase: home wireframe v1 ready for review
+- Phase: home visual direction v1 ready for review
 - Repository audited: yes
 - Reference reviewed: [Calden Games](https://caldengames.com/)
 - Production files modified: no
 - Direction selected: C. Flagship Takeover, adapted to support a rotating featured title
 - Navigable wireframe: `redesign/index.html`
+- Visual direction prototype: `redesign/index.html`
 
 ## Design read
 
