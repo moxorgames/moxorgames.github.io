@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Navigable home-page wireframe for the Moxor Games redesign."
+    />
+    <title>Moxor Games — Redesign wireframe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="wireframe.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+      <a class="brand" href="#top" aria-label="Moxor Games home" data-i18n-aria-label="homeLabel">
+        <img src="assets/images/moxor-logo.png" alt="" width="48" height="48" />
+        <span>Moxor Games</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation" data-i18n-aria-label="navLabel">
+        <a href="#games" data-i18n="navGames">Games</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#press" data-i18n="navPress">Press</a>
+        <a href="#support" data-i18n="navSupport">Support</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" aria-label="Language" data-i18n-aria-label="languageLabel">
+          <button type="button" data-language="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-language="es" aria-pressed="false">ES</button>
+        </div>
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <span data-i18n="menuOpen">Menu</span>
+        </button>
+      </div>
+
+      <nav
+        class="mobile-nav"
+        id="mobile-menu"
+        aria-label="Mobile navigation"
+        data-i18n-aria-label="mobileNavLabel"
+        data-mobile-nav
+        hidden
+      >
+        <a href="#games" data-i18n="navGames">Games</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#press" data-i18n="navPress">Press</a>
+        <a href="#support" data-i18n="navSupport">Support</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/images/fly-gameplay-01.png" />
+            <img
+              src="assets/images/fly-key-art.png"
+              alt=""
+              width="1024"
+              height="700"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <div class="wireframe-note hero-note" data-i18n="heroAssetNote">
+          Pending: local gameplay loop
+        </div>
+
+        <div class="hero-content shell">
+          <p class="eyebrow" data-i18n="featured">Featured game</p>
+          <h1 id="hero-title">Fly-A-Wave</h1>
+          <p class="hero-tagline" data-i18n="flyTagline">Master the cosmic currents.</p>
+          <p class="hero-copy" data-i18n="flyCopy">
+            Ride shifting currents and find your flow in a compact cosmic arcade game.
+          </p>
+
+          <div class="store-actions" aria-label="Download Fly-A-Wave" data-i18n-aria-label="flyDownloadLabel">
+            <a
+              class="button button-store"
+              href="https://play.google.com/store/apps/details?id=com.moxorgames.flyawave&amp;utm_source=moxorgames.com&amp;utm_medium=website"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="button-overline" data-i18n="getItOn">Get it on</span>
+              <strong>Google Play</strong>
+            </a>
+            <a
+              class="button button-store"
+              href="https://apps.apple.com/app/id6749509602?utm_source=moxorgames.com&amp;utm_medium=website"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="button-overline" data-i18n="downloadOn">Download on the</span>
+              <strong>App Store</strong>
+            </a>
+          </div>
+
+          <a class="text-link" href="../fly-a-wave/">
+            <span data-i18n="gameDetails">Game details</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <a class="scroll-cue" href="#games">
+          <span data-i18n="exploreGames">Explore games</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="game-stage super-stage" id="games" aria-labelledby="super-title">
+        <div class="shell stage-grid">
+          <div class="stage-art reveal">
+            <img
+              src="assets/images/super-brainrot-banner.png"
+              alt="A lineup of Super Brainrot Z fighters"
+              data-i18n-alt="superAlt"
+              width="1024"
+              height="500"
+              loading="lazy"
+            />
+            <img
+              class="stage-logo"
+              src="assets/images/super-brainrot-logo.png"
+              alt="Super Brainrot Z Italian Power"
+              width="1024"
+              height="1024"
+              loading="lazy"
+            />
+            <span class="wireframe-note" data-i18n="existingArt">Existing art</span>
+          </div>
+
+          <div class="stage-copy reveal">
+            <p class="section-index">02</p>
+            <h2 id="super-title">Super Brainrot Z</h2>
+            <p data-i18n="superCopy">
+              Choose a fighter. Every win moves them up the community ranking.
+            </p>
+            <div class="inline-actions" aria-label="Super Brainrot Z downloads" data-i18n-aria-label="superDownloadLabel">
+              <a
+                class="button button-compact"
+                href="https://apps.apple.com/app/id6746559627?utm_source=moxorgames.com&amp;utm_medium=website"
+                target="_blank"
+                rel="noopener"
+              >App Store</a>
+              <a
+                class="button button-compact"
+                href="https://play.google.com/store/apps/details?id=com.moxorgames.super_brainrot&amp;utm_source=moxorgames.com&amp;utm_medium=website"
+                target="_blank"
+                rel="noopener"
+              >Google Play</a>
+              <a
+                class="button button-compact"
+                href="https://moxorgames.itch.io/super-brainrot-z-italian-power?utm_source=moxorgames.com&amp;utm_medium=website"
+                target="_blank"
+                rel="noopener"
+              >itch.io</a>
+            </div>
+            <div class="secondary-links">
+              <a class="text-link" href="../super-brainrot-z-italian-power/">
+                <span data-i18n="gameDetails">Game details</span><span aria-hidden="true">↗</span>
+              </a>
+              <a class="text-link" href="../super-brainrot-z-italian-power/ranking/">
+                <span data-i18n="ranking">Community ranking</span><span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="game-stage dead-stage" aria-labelledby="dead-title">
+        <div class="shell dead-grid">
+          <div class="stage-copy reveal">
+            <p class="section-index">03</p>
+            <span class="status" data-i18n="comingSoon">Coming soon</span>
+            <h2 id="dead-title">Dead Run</h2>
+            <p data-i18n="deadCopy">Run, dodge the horde and collect the loot.</p>
+            <p class="status-explainer" data-i18n="deadStatus">
+              Approaching soft launch. No public download link yet.
+            </p>
+            <a class="text-link" href="../dead-run-survive-zombie-loot/">
+              <span data-i18n="gameDetails">Game details</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="stage-art dead-art reveal">
+            <img
+              src="assets/images/dead-run-banner.jpg"
+              alt="A survivor running from a zombie horde in Dead Run"
+              data-i18n-alt="deadAlt"
+              width="1024"
+              height="500"
+              loading="lazy"
+            />
+            <span class="wireframe-note" data-i18n="gameplayPending">Pending: gameplay captures</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="archive-section" aria-labelledby="logic-title">
+        <div class="shell archive-row reveal">
+          <div class="archive-art">
+            <img
+              src="assets/images/logic-solving-banner.png"
+              alt="Two investigators studying a safe in Logic Solving"
+              data-i18n-alt="logicAlt"
+              width="840"
+              height="341"
+              loading="lazy"
+            />
+          </div>
+          <div class="archive-copy">
+            <p class="section-index">04</p>
+            <h2 id="logic-title">Logic Solving</h2>
+            <p data-i18n="logicCopy">Crack the code and open the safe.</p>
+          </div>
+          <div class="archive-action">
+            <span class="status status-muted" data-i18n="archived">Archived</span>
+            <a class="text-link" href="../logic-solving/">
+              <span data-i18n="viewArchive">View archive</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="avatar-placeholder reveal" role="img" aria-label="Creator illustration placeholder" data-i18n-aria-label="avatarLabel">
+            <div class="avatar-mark" aria-hidden="true">MC</div>
+            <p data-i18n="avatarPending">Pending: creator illustration, 1600 × 1600</p>
+          </div>
+          <div class="about-copy reveal">
+            <h2 id="about-title" data-i18n="aboutTitle">A solo indie studio</h2>
+            <p class="about-lead" data-i18n="aboutLead">
+              Moxor Games is the solo indie studio of Maximiliano Cambiaso, based in Tigre, Buenos Aires, Argentina.
+            </p>
+            <p data-i18n="aboutBody">
+              I make approachable games with a clear hook, expressive worlds and enough personality to stay with you after a short session.
+            </p>
+            <span class="wireframe-note inline-note" data-i18n="copyDraft">Draft copy — pending approval</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="press-section" id="press" aria-labelledby="press-title">
+        <div class="shell press-layout">
+          <div class="press-copy reveal">
+            <h2 id="press-title" data-i18n="pressTitle">Press &amp; media</h2>
+            <p data-i18n="pressCopy">
+              Verified game facts, logos, screenshots, videos and studio information in one place.
+            </p>
+            <span class="status press-placeholder" data-i18n="pressPending">Press kit page — next wireframe</span>
+          </div>
+          <div class="contact-block reveal" id="support">
+            <h3 data-i18n="contactTitle">Contact</h3>
+            <a class="contact-email" href="mailto:moxorgames@gmail.com">moxorgames@gmail.com</a>
+            <div class="social-links" aria-label="Social media" data-i18n-aria-label="socialLabel">
+              <a href="https://instagram.com/moxorgames" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://tiktok.com/@moxorgames" target="_blank" rel="noopener">TikTok</a>
+              <a href="https://www.youtube.com/channel/UCX-9ptOZKJBruxxOkTMzI7Q" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/moxor-logo.png" alt="" width="64" height="64" loading="lazy" />
+          <div>
+            <strong>Moxor Games</strong>
+            <p>Tigre · Buenos Aires · Argentina</p>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation" data-i18n-aria-label="footerNavLabel">
+          <a href="#games" data-i18n="navGames">Games</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#press" data-i18n="navPress">Press</a>
+          <a href="../support.html" data-i18n="navSupport">Support</a>
+        </nav>
+        <div class="footer-legal">
+          <a href="../privacy-policy.html" data-i18n="privacy">Privacy</a>
+          <p>© <span data-current-year>2026</span> Moxor Games</p>
+        </div>
+      </div>
+      <p class="prototype-label" data-i18n="prototypeLabel">Navigable wireframe · not final visual design</p>
+    </footer>
+  </body>
+</html>
